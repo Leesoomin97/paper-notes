@@ -1,5 +1,6 @@
 # generate_study_log_index.py
 import os
+import subprocess
 from datetime import datetime
 
 # 각 폴더별 헤더 설명
@@ -17,7 +18,8 @@ FOLDER_HEADER = {
 }
 
 # 자동으로 인덱스를 생성할 폴더들
-TARGET_DIRS = ["study-logs", "paper-notes"]
+TARGET_DIRS = ["."]
+
 
 def generate_index(folder):
     """폴더 내 .md 파일을 인덱싱하고 README.md를 자동 생성"""
@@ -60,9 +62,15 @@ def generate_index(folder):
 
     print(f"✅ {folder}/README.md 갱신 완료 ({len(files)}개 파일)")
 
+
 if __name__ == "__main__":
     for folder in TARGET_DIRS:
         if os.path.exists(folder):
             generate_index(folder)
         else:
             print(f"⚠️ {folder} 폴더가 존재하지 않습니다.")
+
+    # 모든 변경사항 자동 푸시
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "-m", "Auto-update README index"], check=False)
+    subprocess.run(["git", "push", "origin", "main"], check=False)
