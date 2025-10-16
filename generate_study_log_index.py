@@ -1,11 +1,11 @@
-# generate_study_log_index.py
 import os
 import subprocess
 from datetime import datetime
+from urllib.parse import quote
 
 # 각 폴더별 헤더 설명
 FOLDER_HEADER = {
-    "study-logs": (
+    ".": (
         "# 🗂️ Study Logs\n"
         "> 개인 학습 기록(TIL)과 기술 실험 노트들을 모아둔 공간입니다.\n"
         "> 실습 복기, 모델링 아이디어, 부트캠프 수업 회고 등을 Markdown 형태로 정리했습니다.\n"
@@ -17,12 +17,12 @@ FOLDER_HEADER = {
     ),
 }
 
-# 자동으로 인덱스를 생성할 폴더들
-TARGET_DIRS = ["."]
+# 자동 인덱싱할 폴더들 (루트 + paper-notes)
+TARGET_DIRS = [".", "paper-notes"]
 
 
 def generate_index(folder):
-    """폴더 내 .md 파일을 인덱싱하고 README.md를 자동 생성"""
+    """폴더 내 .md 파일을 인덱싱하고 README.md 자동 생성"""
     files = [
         f for f in os.listdir(folder)
         if f.endswith(".md") and f != "README.md"
@@ -43,7 +43,16 @@ def generate_index(folder):
             date = datetime.today().strftime("%Y-%m-%d")
             title = name.replace("_", " ")
 
-        rows.append(f"| {date} | {title} | [보기](./{f}) |")
+        # ✅ URL 인코딩 (띄어쓰기, 괄호, 한글 전부 대응)
+        encoded_name = quote(f)
+
+        # ✅ 루트/서브폴더별 경로 다르게 처리
+        if folder == ".":
+            file_path = encoded_name
+        else:
+            file_path = f"{folder}/{encoded_name}"
+
+        rows.append(f"| {date} | {title} | [보기]({file_path}) |")
 
     # 상단 설명문 가져오기
     header = FOLDER_HEADER.get(
@@ -57,7 +66,8 @@ def generate_index(folder):
 {chr(10).join(rows)}
 """
 
-    with open(os.path.join(folder, "README.md"), "w", encoding="utf-8") as f:
+    readme_path = os.path.join(folder, "README.md")
+    with open(readme_path, "w", encoding="utf-8") as f:
         f.write(readme_content)
 
     print(f"✅ {folder}/README.md 갱신 완료 ({len(files)}개 파일)")
@@ -71,6 +81,6 @@ if __name__ == "__main__":
             print(f"⚠️ {folder} 폴더가 존재하지 않습니다.")
 
     # 모든 변경사항 자동 푸시
-    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "add", "."], check=False)
     subprocess.run(["git", "commit", "-m", "Auto-update README index"], check=False)
     subprocess.run(["git", "push", "origin", "main"], check=False)
