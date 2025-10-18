@@ -18,7 +18,7 @@ FOLDER_HEADER = {
 }
 
 # 자동 인덱싱할 폴더들 (루트 + paper-notes)
-TARGET_DIRS = [".", "paper-notes"]
+TARGET_DIRS = ["paper-notes"]
 
 
 def generate_index(folder):
