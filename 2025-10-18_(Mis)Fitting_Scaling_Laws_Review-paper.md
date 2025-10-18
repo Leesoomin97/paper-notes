@@ -10,9 +10,6 @@
 
 ## 1. 논문 개요
 
-AI 활용 설정  
-사진 설명을 입력하세요.  
-
 **제목:** (Mis) Fitting: A Survey of Scaling Laws  
 **저자:** Margaret Li, Sceha Kudugunta, Luke Zettlemoyer  
 **학회:** ICLR 2025  
@@ -43,9 +40,6 @@ AI 활용 설정
 - 학습 세팅(optimizer, batch size 등)  
 
 결과적으로 각 논문에서 도출된 기울기(scaling exponent)가 다르고 결론도 일관되지 않았다.
-
-AI 활용 설정  
-사진 설명을 입력하세요.  
 
 예를 들어,  
 - Kaplan et al.(OpenAI, 2020)은 **"토큰: 파라미터 = 20 : 1"**  
