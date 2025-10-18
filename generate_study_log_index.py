@@ -17,7 +17,7 @@ FOLDER_HEADER = {
     ),
 }
 
-# 자동 인덱싱할 폴더들 (루트 + paper-notes)
+# ✅ 이제 paper-notes 폴더만 인덱스 생성
 TARGET_DIRS = ["paper-notes"]
 
 
