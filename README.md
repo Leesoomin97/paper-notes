@@ -2,10 +2,11 @@
 > 논문, 강의, 아티클 등 심화 학습 내용을 요약·분석한 공간입니다.
 > 데이터 과학, 딥러닝, 추천시스템 관련 최신 리서치 정리를 포함합니다.
 
-> 마지막 업데이트: 2025-10-18
+> 마지막 업데이트: 2025-10-21
 
 | 날짜 | 제목 | 링크 |
 |------|------|------|
+| 2025-10-21 | 'DINOv3' Self-supervised learning for vision at unprecedented scale-Article | [보기](2025-10-21_%27DINOv3%27%20Self-supervised%20learning%20for%20vision%20at%20unprecedented%20scale-Article.md) |
 | 2025-10-18 | (Mis)Fitting Scaling Laws Review-paper | [보기](2025-10-18_%28Mis%29Fitting_Scaling_Laws_Review-paper.md) |
 | 2025-10-17 | Common pitfalls when building generative AI applications-blog | [보기](2025-10-17_Common%20pitfalls%20when%20building%20generative%20AI%20applications-blog.md) |
 | 2025-09-25 | Using Data Science and I to Engance Decision-Making youtube | [보기](2025-09-25_Using%20Data%20Science%20and%20I%20to%20Engance%20Decision-Making_youtube.md) |
