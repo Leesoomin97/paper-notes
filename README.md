@@ -2,10 +2,11 @@
 > 논문, 강의, 아티클 등 심화 학습 내용을 요약·분석한 공간입니다.
 > 데이터 과학, 딥러닝, 추천시스템 관련 최신 리서치 정리를 포함합니다.
 
-> 마지막 업데이트: 2025-10-26
+> 마지막 업데이트: 2025-10-30
 
 | 날짜 | 제목 | 링크 |
 |------|------|------|
+| 2025-10-30 | Deep Residual Learning for Image Recognition - paper | [보기](2025-10-30_Deep_Residual_Learning_for_Image_Recognition%20-%20paper.md) |
 | 2025-10-26 | A survey on Multimodal Large Language Models-paper | [보기](2025-10-26_A_survey_on_Multimodal_Large_Language_Models-paper.md) |
 | 2025-10-23 | Review Why You Should Upgrade Your Code to PyTorch 2.0-Article | [보기](2025-10-23_Review%20Why%20You%20Should%20Upgrade%20Your%20Code%20to%20PyTorch%202.0-Article.md) |
 | 2025-10-21 | 'DINOv3' Self-supervised learning for vision at unprecedented scale-Article | [보기](2025-10-21_%27DINOv3%27%20Self-supervised%20learning%20for%20vision%20at%20unprecedented%20scale-Article.md) |
