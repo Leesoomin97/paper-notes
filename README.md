@@ -2,10 +2,11 @@
 > 논문, 강의, 아티클 등 심화 학습 내용을 요약·분석한 공간입니다.
 > 데이터 과학, 딥러닝, 추천시스템 관련 최신 리서치 정리를 포함합니다.
 
-> 마지막 업데이트: 2025-11-20
+> 마지막 업데이트: 2025-11-25
 
 | 날짜 | 제목 | 링크 |
 |------|------|------|
+| 2025-11-25 | Generative Adversarial Networks | [보기](2025-11-25_Generative_Adversarial_Networks.md) |
 | 2025-11-20 | efficientnet paper notes | [보기](2025-11-20_efficientnet_paper_notes.md) |
 | 2025-10-30 | Deep Residual Learning for Image Recognition - paper | [보기](2025-10-30_Deep_Residual_Learning_for_Image_Recognition%20-%20paper.md) |
 | 2025-10-26 | A survey on Multimodal Large Language Models-paper | [보기](2025-10-26_A_survey_on_Multimodal_Large_Language_Models-paper.md) |
