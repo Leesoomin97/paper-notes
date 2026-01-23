@@ -2,10 +2,11 @@
 > 논문, 강의, 아티클 등 심화 학습 내용을 요약·분석한 공간입니다.
 > 데이터 과학, 딥러닝, 추천시스템 관련 최신 리서치 정리를 포함합니다.
 
-> 마지막 업데이트: 2026-01-20
+> 마지막 업데이트: 2026-01-24
 
 | 날짜 | 제목 | 링크 |
 |------|------|------|
+| 2026-01-24 | Review Article A-Survey-of-Prompt-Engineering-Methods-in-Large-Language-Models-for-Different-NLP-Tasks | [보기](2026-01-24_Review_Article_A-Survey-of-Prompt-Engineering-Methods-in-Large-Language-Models-for-Different-NLP-Tasks.md) |
 | 2026-01-20 | Data Centric AI MIT Article | [보기](2026-01-20_Data_Centric_AI_MIT_Article.md) |
 | 2025-11-25 | Generative Adversarial Networks | [보기](2025-11-25_Generative_Adversarial_Networks.md) |
 | 2025-11-20 | efficientnet paper notes | [보기](2025-11-20_efficientnet_paper_notes.md) |
